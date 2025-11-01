@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #f5f5f5;
+}
+
+.task {
+  background: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #333;
+  border-bottom: 2px solid #007acc;
+  padding-bottom: 5px;
+}
+
+input, button, label {
+  margin: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 8px 15px;
+  background: #007acc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #005a99;
+}
+
+.result {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.correct { color: green; }
+.wrong { color: red; }
+
+.rotator {
+  text-align: center;
+}
+
+.rotator img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.rotator .nav {
+  font-size: 18px;
+}
+
+.rotator .nav a {
+  color: #007acc;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.rotator .nav a.hidden {
+  visibility: hidden;
+}

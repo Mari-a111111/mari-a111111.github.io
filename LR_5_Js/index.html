@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторна робота: 4 завдання</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="task">
+    <h2>1. Конвертер температур</h2>
+    <label>Фаренгейт (°F): <input type="number" id="fahrenheit" step="0.1"></label><br>
+    <label>Цельсій (°C): <input type="number" id="celsius" step="0.1"></label>
+  </div>
+
+  <div class="task">
+    <h2>2. Таблиця множення (ввід)</h2>
+    <p>Рахунок: <span id="score">0</span></p>
+    <p>Завдання: <span id="question"></span></p>
+    <input type="number" id="answer" placeholder="Ваша відповідь">
+    <button id="checkBtn">Перевірити</button>
+    <button id="nextBtn">Наступне завдання</button>
+    <p class="result" id="feedback"></p>
+  </div>
+
+  <div class="task">
+    <h2>3. Таблиця множення (радіокнопки)</h2>
+    <p>Рахунок: <span id="scoreRadio">0</span></p>
+    <p>Завдання: <span id="questionRadio"></span></p>
+    <div id="options"></div>
+    <button id="nextBtnRadio">Наступне завдання</button>
+    <p class="result" id="feedbackRadio"></p>
+  </div>
+
+  <div class="task">
+    <h2>4. Ротатор зображень: Овочі</h2>
+    <div id="rotator"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
