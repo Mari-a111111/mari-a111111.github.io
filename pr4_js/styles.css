@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  font-family: 'Courier New', monospace;
+  background: #0a0a0a;
+  color: #00ffea;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+  padding: 30px;
+  background: rgba(0, 255, 255, 0.08);
+  border-radius: 20px;
+  max-width: 95%;
+}
+
+h1 {
+  font-size: 2.8em;
+  margin-bottom: 20px;
+ }
+
+#map {
+  height: 600px;
+  width: 100%;
+  border-radius: 15px;
+  margin: 20px 0;
+}
+
+.info {
+  font-size: 1.4em;
+  padding: 15px;
+  background: rgba(0, 255, 255, 0.1);
+  border-radius: 10px;
+}
