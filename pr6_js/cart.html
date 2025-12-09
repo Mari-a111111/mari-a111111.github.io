@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Корзина</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="main_txt">Ви обрали:</h1>
+
+    <table id="cartTable">
+      <thead>
+        <tr>
+          <th>№</th>
+          <th>Назва товару</th>
+          <th>Ціна за од.</th>
+          <th>К-сть</th>
+          <th>Сума</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="cartItems"></tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4" style="text-align:right; font-weight:bold;">Разом до сплати:</td>
+          <td id="totalSum" style="font-weight:bold; color:#2E7D32;">0 грн.</td>
+          <td></td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <div class="cart-actions">
+      <button class="buy_btn" onclick="alert('Оплата пройшла успішно! Дякуємо за покупку ❤️')">Оплатити</button>
+      <button class="buy_btn" onclick="location.href='index.html'">Повернутись до покупок</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

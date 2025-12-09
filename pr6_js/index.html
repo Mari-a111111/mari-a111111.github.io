@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Туристичне спорядження</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="main_txt">Оберіть спорядження для подорожі</h1>
+
+   
+    <div class="cart-icon" id="cartIcon">
+      <span>🛒</span>
+      <span class="cart-count" id="cartCount">0</span>
+    </div>
+
+    <div class="catalog">
+     
+      <div class="card" data-name="Deuter Aircontact 65+10" data-price="8500">
+        <div class="tag new"><p>Новинка</p></div>
+        <div class="c__block"><p class="category">Туристичне спорядження</p></div>
+        <hr>
+        <img src="img/bag.jpeg" alt="Deuter">
+        <p class="name">Deuter Aircontact 65+10</p>
+        <p class="price">8 500 ₴</p>
+        <button class="buy_btn soon">Незабаром в продажі</button>
+      </div>
+
+      <div class="card" data-name="Naturehike Cloud Up 2" data-price="4200">
+        <div class="tag hit"><p>Хіт-продажів</p></div>
+        <div class="c__block"><p class="category">Туристичне спорядження</p></div>
+        <hr>
+        <img src="img/palatka.jpeg" alt="Naturehike">
+        <p class="name">Naturehike Cloud Up 2</p>
+        <p class="price">4 200 ₴</p>
+        <button class="buy_btn">Додати до кошика</button>
+      </div>
+
+      <div class="card" data-name="Sea to Summit Trek TkII" data-price="9800">
+        <div class="c__block"><p class="category">Туристичне спорядження</p></div>
+        <hr>
+        <img src="img/sleep.jpeg" alt="Sea to Summit">
+        <p class="name">Sea to Summit Trek TkII</p>
+        <p class="price">9 800 ₴</p>
+        <button class="buy_btn">Додати до кошика</button>
+      </div>
+
+      <div class="card" data-name="MSR PocketRocket 2" data-price="2300">
+        <div class="tag hit"><p>Хіт-продажів</p></div>
+        <div class="c__block"><p class="category">Туристичне спорядження</p></div>
+        <hr>
+        <img src="img/msr.jpeg" alt="MSR">
+        <p class="name">MSR PocketRocket 2</p>
+        <p class="price">2 300 ₴</p>
+        <button class="buy_btn">Додати до кошика</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="quantityModal" class="modal">
+    <div class="modal-content">
+      <h3>Вкажіть кількість:</h3>
+      <input type="number" id="quantityInput" min="1" value="1">
+      <button id="addToCartBtn">Додати</button>
+      <button onclick="closeModal('quantityModal')">Скасувати</button>
+    </div>
+  </div>
+
+  <div id="addedModal" class="modal">
+    <div class="modal-content">
+      <h3>Товар додано!</h3>
+      <button onclick="goToCart()">Перейти у корзину</button>
+      <button onclick="closeModal('addedModal')">Повернутись до покупок</button>
+    </div>
+  </div>
+
+  <div id="emptyCartModal" class="modal">
+    <div class="modal-content">
+      <h3>Корзина пуста</h3>
+      <button onclick="closeModal('emptyCartModal')">OK</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
