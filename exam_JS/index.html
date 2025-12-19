@@ -3,19 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Запис виділеного тексту в input</title>
+    <title>Виділення тексту в input</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <input type="text" id="myInput" placeholder="Сюди потрапить виділений текст">
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-       Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-    <p>Інший параграф для тестування: будь-який виділений текст на сторінці 
-       автоматично з'явиться у полі вище.</p>
+    <div class="container">
+        <h1>Виділіть будь-який текст нижче</h1>
+        
+        <input type="text" id="myInput" placeholder="Тут з'явиться виділений текст" readonly>
+        
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+               Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+               nisi ut aliquip ex ea commodo consequat.</p>
+            
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+               dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+        </div>
+    </div>
 
     <script src="script.js"></script>
-
 </body>
 </html>
